@@ -15,6 +15,7 @@
   /* BACKGROUND COLOR*/
   --bg-second-color: #2f303a;
   --bg-color: #fff;
+  --bg-color-hero: #c4c4c4;
 
   /* RADIO BUTTONS */
   --radio-buttons-color: #f5f4fa;
@@ -32,7 +33,6 @@ body {
   background-color: var(--bg-color);
   font-family: var(--primary-font);
   color: var(--primary-text-color);
-  /* width: 1600px; */
   margin: 0 auto;
 }
 a {
@@ -138,7 +138,14 @@ ul {
 
 /* HERO */
 .hero {
-  background-color: var(--bg-second-color);
+  background-color: var(--bg-color-hero);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -260,11 +267,47 @@ ul {
 .team-item {
   width: 270px;
   background: var(--bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-text-container {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+/* Секция Постоянные клиенты */
+
+.clients-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.clients-list {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.clients-item {
+  border: 1px solid #afb1b8;
+  width: 170px;
+  height: 92px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.connecting-list .item + .item {
+  margin-left: 10px;
 }
 
 /* FOOTER */
@@ -298,6 +341,44 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-box {
+  display: flex;
+  align-items: flex-start;
+}
+.main-footer-box {
+  display: flex;
+  flex-direction: column;
+}
+
+/* FOOTER ПРИСОЕДИНЯЙТЕСЬ */
+.connecting-box {
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 12px;
+  margin-left: 70px;
+}
+.connecting-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.connecting-list {
+  list-style: none;
+  margin-top: 20px;
+}
+.connecting-item {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
 /* СТРАНИЦА PORTFOLIO */
 /* RADIO BUTTONS */
 .radio-buttons-list {
@@ -322,7 +403,6 @@ ul {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-
   cursor: pointer;
 }
 .radio-button:hover,
