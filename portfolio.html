@@ -34,10 +34,19 @@
             </nav>
             <ul class="header-contact-list list">
                 <li class="header-contact-item item">
-                    <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a class="mail link" href="mailto:info@devstudio.com">
+                        <svg class="contact-ico mail" width='16px' height='12px'>
+                            <use href='./images/sprite.svg#icon-envelope'></use>
+                        </svg>
+                        info@devstudio.com
+                    </a>
                 </li>
                 <li class="header-contact-item item">
-                    <a class="link" href="tel:+38096111111">+38 096 111 11 11</a>
+                    <a class="phone link" href="tel:+38096111111">
+                        <svg class="contact-ico mail" width='10px' height='16px'>
+                            <use href='./images/sprite.svg#icon-smartphone'></use>
+                        </svg>
+                        +38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
@@ -66,7 +75,7 @@
                 <!-- ФИЛЬТР СВЯЗАННЫЙ С RADIO BUTTONS -->
                 <ul class="radio-filter-list list">
                     <li class="radio-filter-item item">
-                        <a href="">
+                        <a href="" class="radio-item-link">
                             <img width="370" class="filter-image" src="./images/tech.jpg" alt="ноутбук с веб-сайтом">
                             <div class="radio-filter-box">
                                 <h2 class="radio-filter-title">Технокряк</h2>
@@ -75,7 +84,7 @@
                         </a>
                     </li>
                     <li class="radio-filter-item item">
-                        <a href="">
+                        <a href="" class="radio-item-link">
                             <img width="370" class="filter-image" src="./images/poster.jpg"
                                 alt="баскетболист нового орлеана против баскетболиста голден стар">
                             <div class="radio-filter-box">
@@ -85,7 +94,7 @@
                         </a>
                     </li>
                     <li class="radio-filter-item item">
-                        <a href="">
+                        <a href="" class="radio-item-link">
                             <img width="370" class="filter-image" src="./images/seafood.jpg" alt="логотип ресторана сифуд с изображением рыбы">
                             <div class="radio-filter-box">
                                 <h2 class="radio-filter-title">Ресторан Seafood</h2>
@@ -94,7 +103,7 @@
                         </a>
                     </li>
                     <li class="radio-filter-item item">
-                        <a href="">
+                        <a href="" class="radio-item-link">
                             <img width="370" class="filter-image" src="./images/prime.jpg" alt="наушники">
                             <div class="radio-filter-box">
                                 <h2 class="radio-filter-title">Проект Prime</h2>
@@ -103,7 +112,7 @@
                         </a>
                     </li>
                     <li class="radio-filter-item item">
-                        <a href="">
+                        <a href="" class="radio-item-link">
                             <img width="370" class="filter-image" src="./images/boxes.jpg" alt="две коробки">
                             <div class="radio-filter-box">
                                 <h2 class="radio-filter-title">Проект Boxes</h2>
@@ -112,7 +121,7 @@
                         </a>
                     </li>
                     <li class="radio-filter-item item">
-                        <a href="">
+                        <a href="" class="radio-item-link">
                             <img width="370" class="filter-image" src="./images/borders.jpg" alt="монитор с сайтом">
                             <div class="radio-filter-box">
                                 <h2 class="radio-filter-title">Inspiration has no Borders</h2>
@@ -121,7 +130,7 @@
                         </a>
                     </li>
                     <li class="radio-filter-item item">
-                        <a href="">
+                        <a href="" class="radio-item-link">
                             <img width="370" class="filter-image" src="./images/limited.jpg" alt="Книга">
                             <div class="radio-filter-box">
                                 <h2 class="radio-filter-title">Издание Limited Edition</h2>
@@ -130,7 +139,7 @@
                         </a>
                     </li>
                     <li class="radio-filter-item item">
-                        <a href="">
+                        <a href="" class="radio-item-link">
                             <img width="370" class="filter-image" src="./images/lab.jpg" alt="этикетка">
                             <div class="radio-filter-box">
                                 <h2 class="radio-filter-title">Проект LAB</h2>
@@ -139,7 +148,7 @@
                         </a>
                     </li>
                     <li class="radio-filter-item item">
-                        <a href="">
+                        <a href="" class="radio-item-link">
                             <img width="370" class="filter-image" src="./images/growing.jpg" alt="ноутбук с веб-сайтом">
                             <div class="radio-filter-box">
                                 <h2 class="radio-filter-title">Growing Business</h2>
@@ -153,20 +162,63 @@
     </main>
     <footer class="page-footer">
         <div class="container">
-            <a href="./index.html" class="logo footer-logo">Web<span class="logo-second-color-footer">Studio</span></a>
-            <address class="container-adress-footer">
-                <ul class="footer-list list">
-                    <li class="item">
-                        <a class="map" href="">г. Киев, пр-т Леси Украинки, 26</a>
-                    </li>
-                    <li class="item">
-                        <a class="mail" href="mailto:info@example.com">info@example.com</a>
-                    </li>
-                    <li class="item">
-                        <a class="phone" href="tel:+380991111111">+38 099 111 11 11</a>
-                    </li>
-                </ul>
-            </address> 
+            <div class="footer-box">
+                <div class="main-footer-box">
+                    <a href="./index.html" class="logo footer-logo">Web<span
+                            class="logo-second-color-footer">Studio</span></a>
+                    <address class="container-adress-footer">
+                        <ul class="footer-list list">
+                            <li class="item">
+                                <a class="map" href="">г. Киев, пр-т Леси Украинки, 26</a>
+                            </li>
+                            <li class="item">
+                                <a class="mail" href="mailto:info@example.com">info@example.com</a>
+                            </li>
+                            <li class="item">
+                                <a class="phone" href="tel:+380991111111">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <!-- Присоединяйтесь -->
+                <div class="connecting-box">
+                    <div>
+                        <h3 class="connecting-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+                    </div>
+                    <div>
+                        <ul class="connecting-list">
+                            <li>
+                                <a href="#" class="connecting-icon instagram" aria-label="instagram">
+                                    <svg class="footer-ico" width='20px' height='20px'>
+                                        <use href='./images/sprite.svg#icon-instagram'></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="connecting-icon twitter" aria-label="Twitter">
+                                    <svg class="footer-ico" width='20px' height='20px'>
+                                        <use href='./images/sprite.svg#icon-twitter'></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="connecting-icon facebook" aria-label="Facebook">
+                                    <svg class="footer-ico" width='20px' height='20px'>
+                                        <use href='./images/sprite.svg#icon-facebook'></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="connecting-icon linkidin" aria-label="LinkedIn">
+                                    <svg class="footer-ico" width='20px' height='20px'>
+                                        <use href='./images/sprite.svg#icon-linkedin'></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
