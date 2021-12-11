@@ -356,6 +356,11 @@ ul {
   fill: var(--accent-text-color);
 }
 
+.clients-ico {
+  width: 106px;
+  height: 60px;
+}
+
 .clients-link {
   display: flex;
   justify-content: center;
