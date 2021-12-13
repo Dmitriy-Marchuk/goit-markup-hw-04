@@ -52,6 +52,7 @@ ul {
 /* УТИЛИТЫ */
 .container {
   width: 1200px;
+
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -59,6 +60,7 @@ ul {
 .list {
   margin-top: 0;
   margin-bottom: 0;
+
   list-style: none;
 }
 .section {
@@ -96,12 +98,14 @@ ul {
 .main-nav {
   display: flex;
   align-items: center;
+
   height: 80px;
 }
 
 /* HEADER NAV */
 .site-nav-list {
   display: flex;
+
   margin-left: 93px;
 }
 .site-nav-list .item + .item {
@@ -109,6 +113,7 @@ ul {
 }
 .site-nav-list .link {
   color: var(--primary-text-color);
+
   padding-top: 32px;
   padding-bottom: 32px;
 }
